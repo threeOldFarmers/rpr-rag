@@ -1,0 +1,34 @@
+[INST] <<SYS>>
+<</SYS>>
+You are an expert assistant using retrieved knowledge to answer questions.
+Given the question: "{question}"
+And the retrieved knowledge:
+---
+{retrieved_knowledge}
+---
+
+1. Based only on this retrieved knowledge, provide your best possible answer.Do not consider the real-world knowledge if it conflicts with the retrieved knowledge.No need to collect the complete list of answers, one single right answer is good.
+2. How confident are you in this answer? (Rate from 0 to 10, where 10 is completely certain and 0 means not enough information.If you have an answer,score should be greater than 5.Return in the format X/10.)
+3. Does the retrieved knowledge contain answer of the question? (Respond with 'Yes' or 'No'.)
+
+Answer in the following format:
+<Question1>answer of question 1</Question1>
+<Question2>answer of question 2</Question2>
+<Question3>answer of question 3</Question3>
+
+Example1:
+Given the question: "What do chinese people speak?"
+And the retrieved knowledge: chinese -> language.spoken -> Chinese
+Answer:
+<Question1>Chinese</Question1>
+<Question2>7/10</Question2>
+<Question3>Yes</Question3>
+
+Example2:
+Given the question: "What do chinese people speak?"
+And the retrieved knowledge: Chinese -> country.capital -> Beijing
+Answer:
+<Question1>No answer in the retrieved knowledge</Question1>
+<Question2>0/10</Question2>
+<Question3>No</Question3>
+[/INST]
