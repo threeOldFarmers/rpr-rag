@@ -28,7 +28,7 @@ After downloading, **extract all files into the `embedding_model/` directory**:
 
 ```
 project_root/
-├── embedding_model/
+├── embedding_models/
 │   ├── webqsp-embedding-model/
 │   ├── ...
 ```
@@ -200,9 +200,14 @@ results/answer/metaqa-1hop/gpt-5-mini+rag/test/eval_result.txtl
 ## 9. Directory
 
 All logs are stored in the `log/` directory.
+
 All result files are stored in the `results/` directory.
+
 All large language models are stored in the `llm_models/` directory.
-All embedding models are stored in the `embedding_models/` directory. Fine-tuned models `webqsp-embedding-model` and `cwq-embedding-model` can be loaded.
+
+All embedding models are stored in the `embedding_models/` directory. 
+
+Fine-tuned models `webqsp-embedding-model` and `cwq-embedding-model` can be loaded.
 
 
 ---
